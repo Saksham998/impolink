@@ -1,0 +1,50 @@
+.app-heading {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  margin-bottom: 8px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.running-icon {
+  position: fixed;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: runningAnimation 2s linear infinite;
+}
+
+.running-icon__icon {
+  color: #000000; /* Set the desired color for the icon */
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fcfff0; /* Set your desired background color here */
+}
+
+.app-container.loaded .app-heading {
+  opacity: 1;
+}
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.app-heading {
+  animation: flickerAnimation 2s infinite;
+}

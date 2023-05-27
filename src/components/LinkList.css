@@ -1,0 +1,46 @@
+.link-url {
+  color: #333;
+  font-weight: bold;
+  margin-right: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.link-url:hover {
+  color: #848484; /* Set your desired hover color */
+  text-decoration: underline;
+}
+
+.copy-button {
+  background-color: #000000;
+  color: #000000;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.copy-button:hover {
+  background-color: #ff00ff; /* Set your desired hover color */
+}
+
+.remove-button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.remove-button:hover {
+  background-color: #ff00ff; /* Set your desired hover color */
+}
+
+.link-icon {
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.link-icon:hover {
+  transform: scale(1.2); /* Set your desired hover transformation */
+}
